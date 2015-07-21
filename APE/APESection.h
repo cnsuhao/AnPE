@@ -1,4 +1,4 @@
-#include "APEBasic.h"
+#pragma once
 
 #include "APEBasic.h"
 //继承APEBasic中基础处理功能并对节处理进行扩展.
