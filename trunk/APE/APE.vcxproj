@@ -13,6 +13,7 @@
   <ItemGroup>
     <ClCompile Include="APEBasic.cpp" />
     <ClCompile Include="APEImport.cpp" />
+    <ClCompile Include="APESection.cpp" />
     <ClCompile Include="APExport.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -20,6 +21,9 @@
     <ClInclude Include="APEImport.h" />
     <ClInclude Include="APESection.h" />
     <ClInclude Include="APExport.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{21B9F88F-CDDB-4E9A-BEBC-AA61C89A44BE}</ProjectGuid>

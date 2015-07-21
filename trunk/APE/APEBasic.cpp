@@ -50,7 +50,7 @@ BOOL APEFile::LoadPEFile(WCHAR *lpFileName)
 	pstMapFile=new MAP_FILE_STRUCT;
 	bLoadStact=AFILE_FROM_FILE;
 
-	hFile=CreateFile(lpFileName,GENERIC_READ|GENERIC_WRITE,FILE_SHARE_READ,NULL,OPEN_ALWAYS,
+	hFile=CreateFileW(lpFileName,GENERIC_READ|GENERIC_WRITE,FILE_SHARE_READ,NULL,OPEN_ALWAYS,
 		FILE_ATTRIBUTE_NORMAL,NULL);
 
 	if (hFile==NULL)
@@ -200,7 +200,7 @@ PIMAGE_DATA_DIRECTORY APEFile::GetDataDirectory(int nIndex)
 	return NULL;
 }
 
-int APEFile::GetSectionCout()
+int APEFile::GetSectionCount()
 {
 	PIMAGE_FILE_HEADER pNtFileHeader=GetNtFileHeader();
 	if (pNtFileHeader!=NULL)

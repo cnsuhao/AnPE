@@ -29,7 +29,7 @@ public:
 	PIMAGE_SECTION_HEADER GetSection(int nIndex);				//得到指定节的信息
 	BOOL	IsPEFile();
 	PIMAGE_SECTION_HEADER GetFirstSectionHeader();				//得到第一个节
-	int		GetSectionCout();									//得到节数
+	int		GetSectionCount();									//得到节数
 	PIMAGE_DATA_DIRECTORY GetDataDirectory(int nIndex);			//得到数据指定目录的信息
 	PIMAGE_DATA_DIRECTORY GetDataDirectory();					//得到数据目录第一项
 	PIMAGE_OPTIONAL_HEADER GetNtOptionalHeader();
