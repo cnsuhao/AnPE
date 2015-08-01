@@ -88,7 +88,7 @@ BOOL APEImport::ReLocalImport(DWORD dwRVA)
 		{
 			*(DWORD*)RvaToPtr(dwOrThunk)+=(dwRVA-0x2000);
 			*(DWORD*)RvaToPtr(dwIatThunk)+=(dwRVA-0x2000);
-			dwOrThunk+sizeof(DWORD);
+			dwOrThunk+=sizeof(DWORD);
 			dwIatThunk+=sizeof(DWORD);
 		}
 
