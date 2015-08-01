@@ -27,6 +27,12 @@
     <ClCompile Include="APEImport.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="APESection.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="APEReloc.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="APEBasic.h">
@@ -39,6 +45,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="APESection.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="APEReLoc.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

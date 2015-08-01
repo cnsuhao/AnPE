@@ -13,12 +13,14 @@
   <ItemGroup>
     <ClCompile Include="APEBasic.cpp" />
     <ClCompile Include="APEImport.cpp" />
+    <ClCompile Include="APEReloc.cpp" />
     <ClCompile Include="APESection.cpp" />
     <ClCompile Include="APExport.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="APEBasic.h" />
     <ClInclude Include="APEImport.h" />
+    <ClInclude Include="APEReLoc.h" />
     <ClInclude Include="APESection.h" />
     <ClInclude Include="APExport.h" />
   </ItemGroup>

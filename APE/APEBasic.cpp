@@ -163,6 +163,7 @@ PIMAGE_FILE_HEADER APEFile::GetNtFileHeader()
 	{
 		return (PIMAGE_FILE_HEADER)&pNth->FileHeader;
 	}
+	return NULL;
 }
 //得到可选头
 PIMAGE_OPTIONAL_HEADER APEFile::GetNtOptionalHeader()
@@ -189,7 +190,7 @@ PIMAGE_DATA_DIRECTORY APEFile::GetDataDirectory()
 PIMAGE_DATA_DIRECTORY APEFile::GetDataDirectory(int nIndex)
 
 {
-	if (0<=nIndex<16)
+	if ((0<=nIndex)&&(nIndex<16))
 	{
 		PIMAGE_DATA_DIRECTORY pDataDir=GetDataDirectory();
 		if (pDataDir!=NULL)
@@ -222,7 +223,7 @@ PIMAGE_SECTION_HEADER APEFile::GetFirstSectionHeader()
 
 PIMAGE_SECTION_HEADER APEFile::GetSection(int nIndex)
 {
-	int nCount=GetSectionCout();
+	int nCount=GetSectionCount();
 	if (nIndex>=nCount||nIndex<0)
 	{
 		return NULL;
